@@ -1,4 +1,6 @@
 # Estruturas Básicas de Dados I
+Disciplina do Currículo base ministrada pelo Professor César Rennó-Costa.
+
 ## Recursos Online
 - [Lista de Aulas no YouTube](https://www.youtube.com/playlist?list=PLKEE02MA43B93wk3PpJOqJOlqmx2crBHN)
 - [Listas de Aulas de Estrutura de Dados 1](https://www.youtube.com/playlist?list=PLnCmBuT0CUt_0oVhcXMA3yJlQKcm3xR0W),
@@ -41,10 +43,10 @@
 ### Unidade II
 
 #### Problema de Ordenação em uma TAD Sequência
-- [ ] **Aula 1:** _Problema de Ordenação_ [Assistir](https://youtu.be/dxMxbcoeVGk)
-- [ ] **Aula 2:** _Avaliando se uma sequência é ordenada_ [Assistir](https://youtu.be/m45K18BfkoM)
-- [ ] **Aula 3:** _O algoritmo canônico de ordenação e a ordenação por bolha_ [Assistir](https://youtu.be/nUr-PSRYa70)
-- [ ] **Aula 4:** _Estratégias de ordenação baseada em Seleção e Inserção_ [Parte 1](https://youtu.be/cItMITJOrBM), [Parte 2](https://youtu.be/c0EXEgAQgmE)
+- [x] **Aula 1:** _Problema de Ordenação_ [Assistir](https://youtu.be/dxMxbcoeVGk)
+- [x] **Aula 2:** _Avaliando se uma sequência é ordenada_ [Assistir](https://youtu.be/m45K18BfkoM)
+- [x] **Aula 3:** _O algoritmo canônico de ordenação e a ordenação por bolha_ [Assistir](https://youtu.be/nUr-PSRYa70)
+- [x] **Aula 4:** _Estratégias de ordenação baseada em Seleção e Inserção_ [Parte 1](https://youtu.be/cItMITJOrBM), [Parte 2](https://youtu.be/c0EXEgAQgmE)
 - [ ] **Aula 5:** _Estratégias de ordenação baseada em Separação e Junção_ [Parte 1](https://youtu.be/HzS_2ZmL--U), [Parte 2](https://youtu.be/PSRNCF2ZWJc)
 
 ### Unidade III
