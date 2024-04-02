@@ -1,110 +1,66 @@
-# Resumo da unidade I
+# Estruturas Básicas de Dados I
+Disciplina do Currículo base ministrada pelo Professor César Rennó-Costa.
 
-**Checklist**  
-[x] Gerenciamento de memória: alocação estática e alocação dinâmica  
-[x] TAD e ED: TAD sequência e ED vetor  
-[x] Análise de algoritmo: complexidade e completude  
-[x] Busca: sequencial e binária  
+## Recursos Online
+- [Lista de Aulas no YouTube](https://www.youtube.com/playlist?list=PLKEE02MA43B93wk3PpJOqJOlqmx2crBHN)
+- [Listas de Aulas de Estrutura de Dados 1](https://www.youtube.com/playlist?list=PLnCmBuT0CUt_0oVhcXMA3yJlQKcm3xR0W),
+- [Listas de Aulas de Estrutura de Dados 2](https://www.youtube.com/playlist?list=PL5TPkym335qzgzl0jW6Xf4XITmCofzOCy),
+- [Listas de Aulas de Estrutura de Dados 3](https://www.youtube.com/playlist?list=PLxI8Can9yAHf8k8LrUePyj0y3lLpigGcl)
 
-## Gerenciamento de memória
+## Conteúdo da Disciplina
+### Unidade I
+#### Dados, Memória & Programas de Computador
+- [x] **Aula 1/3:** _Conceito de dados, registros e estados. Registros binários. Dados e Informação._ [Assistir](https://youtu.be/LXts1nMlkTU)
+- [x] **Aula 2/3:** _Dados são contáveis. Bits e Bytes. Big Data. Processamento de dados. Operações em dados._ [Assistir](https://youtu.be/XUUHf1PwTHI)
+- [x] **Aula 3/3:** _Tipos de dados. Codificação. Tamanho de tipos._ [Assistir](https://youtu.be/xKZuOddVYEA)
+- [x] **Aula 1/2:** _Memória e dados_ [Assistir](https://youtu.be/y9Bbl-crt0s)
+- [x] **Aula 2/2:** _Processador_ [Assistir](https://youtu.be/JFAwtb8usEA)
+- [x] **Aula 3/4:** _Linguagens de Programação e Sistema Operacional_ [Assistir](https://youtu.be/APN4_w4pQVo)
+- [x] **Aula 4/4:** _Processo_ [Assistir](https://youtu.be/wLDsUlFCuG8)
 
-O alocar de memória consiste em um processo de reservar um espaço na memória para uso de um programa durante a execução.
+#### Gerenciamento de Memória
+- [x] **Aula 1:** _Programa em C_ [Assistir](https://youtu.be/XmHL4EYh-kY)
+- [x] **Aula 2:** _Alocação Estática_ [Assistir](https://youtu.be/mTYdT7xyemQ)
+- [x] **Aula 3:** _Alocação Dinâmica_ [Assistir](https://youtu.be/jIlJDt4K_o0)
+- [x] **Resolução Exercícios de Alocação Estática:** [Assistir](https://youtu.be/ZRrwCum2LPo)
+- [x] **Resolução Exercícios de Alocação Dinâmica:** [Assistir](https://youtu.be/2r_3f6L2EHw)
 
-Quando um programa é executado o sistema operacional reserva um espaço na memória (segmento) para esse programa.
+#### Tipo Abstrato de Dados: TAD Sequência
+- [x] **Aula 1:** _Tipo Abstrato de Dados_ [Assistir](https://youtu.be/zwz8KU_ttqI)
+- [x] **Aula 2:** _Introdução a TAD Conjunto e TAD Sequência_ [Assistir](https://youtu.be/iIIlz8qNVDo)
+- [x] **Aula 3:** _Introdução à implementação de TAD Sequência com o ED Vetor_ [Assistir](https://youtu.be/QSYsg87mR74)
 
-O segmento é dividido em duas partes principais: **segmento de código**, onde o SO vai colocar as instruções do programa, e **segmento de dados** que é subdividida em outras partes tais, como constantes (constantes, variáveis), controle (focado a comunicação do SO com o processo), pilha (alocação estática) e heap(alocação dinâmica).
+#### Problema de Busca em uma TAD Sequência
+- [x] **Aula 1:** _Problema de Busca_ [Assistir](https://youtu.be/YcTo4WQynjI)
+- [x] **Aula 2:** _Busca Sequencial_ [Assistir](https://youtu.be/MzOyojX7nFs)
+- [x] **Aula 3:** _Busca Binária_ [Assistir](https://youtu.be/ufxEf86w9bY)
 
-### Alocamento estático vs dinâmico
+#### Análise de Algoritmos (Complexidade e Completude)
+- [x] **Aula 1:** _Análise de Algoritmos_ [Assistir](https://youtu.be/qQ7JsACgV7g)
+- [x] **Aula 2:** _Análise de Desempenho (Complexidade)_ [Parte 1](https://youtu.be/PmoRKdYEb7Y), [Parte 2](https://youtu.be/k02zf4kVw-M), [Parte 3](https://youtu.be/opYpcKeqDIM)
+- [x] **Aula 3:** _Análise de Completude_ [Assistir](https://youtu.be/DOHHmbRq2Fs)
 
-|                  | Alocação Estática                  | Alocação Dinâmica                        |
-|------------------|------------------------------------|------------------------------------------|
-| Definição        | A alocação estática é feita em tempo de compilação e o tamanho da memória é determinado durante a fase de compilação. | A alocação dinâmica é feita em tempo de execução e o tamanho da memória pode ser determinado durante a execução do programa. |
-| Onde?            | Na pilha (stack).                  | No heap.                                 |
-| Como?            | Ao declarar uma variável ou função. | Ao chamar funções do sistema, como `malloc()`, `calloc()`, `realloc()` e `free()`. |
-| Momento em que o tamanho é definido | Durante a compilação.     | Durante a execução do programa.          |
-| Tempo de vida    | O tempo de vida é o mesmo que o do programa ou função. | O tempo de vida é até a memória ser liberada explicitamente. |
-| Exemplos         | Arrays estáticos, variáveis globais. | alocação de memória para objetos em linguagens de programação orientadas a objetos. |
+### Unidade II
 
-## Tipo Abstrato de Dados (TAD) e Estrutura de Dados (ED)
+#### Problema de Ordenação em uma TAD Sequência
+- [x] **Aula 1:** _Problema de Ordenação_ [Assistir](https://youtu.be/dxMxbcoeVGk)
+- [x] **Aula 2:** _Avaliando se uma sequência é ordenada_ [Assistir](https://youtu.be/m45K18BfkoM)
+- [x] **Aula 3:** _O algoritmo canônico de ordenação e a ordenação por bolha_ [Assistir](https://youtu.be/nUr-PSRYa70)
+- [x] **Aula 4:** _Estratégias de ordenação baseada em Seleção e Inserção_ [Parte 1](https://youtu.be/cItMITJOrBM), [Parte 2](https://youtu.be/c0EXEgAQgmE)
+- [x] **Aula 5:** _Estratégias de ordenação baseada em Separação e Junção_ [Parte 1](https://youtu.be/HzS_2ZmL--U), [Parte 2](https://youtu.be/PSRNCF2ZWJc)
 
-### Conceitos Básicos
+### Unidade III
 
-#### TAD  
+#### TAD Sequência: ED Vetor
+- [x] **Aula 1:** _TAD Sequência e implementações_ [Assistir](https://youtu.be/QFMdNProPaw)
+- [x] **Aula 2:** _Operações de implementação de ED Vetor_ [Assistir](https://youtu.be/dH1vvok-KTI)
+- [x] **Aula 3:** _Operações de implementação de ED Vetor Circular_ [Assistir](https://youtu.be/064S6n0_xcc)
+<!-- - **Compilação de Códigos:** `gcc -o teste_vetorcircular edb_teste_vetorcircular.c edb_vetorcircular.c` / `gcc -o teste_vetor edb_teste_vetor.c edb_vetor.c`-->
 
-Um Tipo de Dados Abstrato não se preocupa com a implementação, ou seja, o que está acontecendo por debaixo dos panos. O que é importante é a interface, ou seja, a **natureza** (tipo) do tipo de dados que será armazenado e as **operações** que podem ser realizadas.
+#### TAD Sequência: ED Lista Ligada
+- [ ] **Aula 1:** _Implementação de TAD Sequência com ED Lista Ligada_ [Parte 1](https://youtu.be/8AkLrPoefnQ) (Definição de Lista Ligada), [Parte 2](https://youtu.be/vT2ZnhOtI0E) (Iterador e acesso a elementos), [Parte 3](https://youtu.be/PP-8qdXbrB0) (Inserção e Remoção)
+- [ ] **Aula 2:** _Implementação de TAD Sequência com ED Lista Duplamente Ligada e ED Lista Ligada com Início e Fim_ [Assistir](https://youtu.be/wYfR1oMuLV0)
+<!-- - **Compilação de Códigos:** `gcc -o teste_ll edb_teste_listaligada.c edb_listaligada.c` / `gcc -o teste_ll2 edb_teste_listaligada2.c edb_listaligada2.c` / `gcc -o teste_ll3 edb_teste_listaligada3.c edb_listaligada3.c`-->
 
-#### ED
-
-Uma Estrutura de Dados, por outro lado, tem exatamente a preocupação com a implementação de um TAD. Portanto, a ED preocupa-se com a questão do gerenciamento de memória (**armazenamento**) e como as operações serão implementadas, ou seja, os **algoritmos**.
-
-### Sequência e Vetor
-
-A estrutura sequência é um tipo abstrato de dados (TAD). A sequência é definida como um agrupamento de elementos de mesma natureza, que possui operações como inserção de elemento, remoção de elemento, busca de elemento, união e interseção de conjuntos.
-
-O vetor e a lista ligada são implementações desse conceito.
-
-No vetor, os elementos são organizados de forma que cada um possui um índice, funcionando como um endereço, e são armazenados em um bloco contínuo de memória.
-
-Por outro lado, na lista ligada, os elementos não são necessariamente contínuos e são ligados por meio de referências, onde cada elemento aponta para o próximo na sequência.
-
-## Análise de algoritmo
-
-O objetivo da análise de algoritmos é verificar o desempenho de uma implementação de um algoritmo com alguns critérios como a complexidade/desempenho e a completude/correção.
-
-### Complexidade
-
-A complexidade de algoritmos está preocupada com o desempenho da implementação, levando em consideração a quantidade de recursos (como tempo e espaço) necessários para resolver um problema.
-
-Uma das notações usadas para descrever a complexidade de algoritmos é a notação Big O.
-
-O Big O expressa o crescimento do tempo de execução (ou uso de espaço) de um algoritmo à medida que o tamanho da entrada aumenta. Com base nisso, o desempenho da solução é classificado nas seguintes categorias (ordenadas da melhor para a pior):
-
-- O(1) - Constante: quando o tempo de execução e/ou espaço não depende do tamanho das entradas.
-- O(log2 n) - Logaritmo
-- O(n) - Linear
-- O(n log2 n) - Linearítmico
-- O(n²) - Quadrática
-- O(n!) - Fatorial
-
-#### Como calcular uma complexidade
-
-- Constantes são despresadas;
-- Categorias menores são despresadas.
-
-**Exemplos:**
-
-- f(n) = 4n^5 + 10n^3 + 100 => O(n^5)
-- f(n) = 2n + 10 => O(n)
-- f(n) = 3log n + 5 => O(log n)
-- f(n) = 2^(n+2) => O(2^n) [complexidade exponencial]
-
-### Corretude
-
-A corretude refere-se a capacidade de gerar uma saída correta as mais diversas instância de uma implementação. Isso é verificado principalmente por meio de provas matemáticas, por exemplo, uma busca binária por ser verificada por meio de uma demonstração por indução. Portanto, a corretude garante se a implementação está solucionando de fato o problema em questão.
-
-### Técnicas usadas para essas análise
-
-- **Análise matemática:** usa fórmulas e provas matemáticas para entender o desempenho e a corretude dos algoritmos.
-- **Análise empírica:**  usa dados reais, como tempo de execução, obtidos por experimentação prática para avaliar o desempenho dos algoritmos.
-
-## Problema de busca
-
-Um problema de busca consiste em uma situação em que há uma sequência de elementos e precisa-se verificar se um elemento-chave está na sequência. As entradas são a sequência e o valor-chave, e a saída é um booleano.
-
-Há formas diferentes de resolver esse problema com complexidades diferentes.
-
-> Instância de um problema: um caso específico do problema em questão.
-
-### Busca Sequencial/Linear
-
-Consiste em uma abordagem na qual os elementos são verificados sequencialmente do primeiro ao último da lista ou do último ao primeiro.
-
-- Melhor caso: O(1) - O elemento é encontrado na primeira verificação, ou seja, está no índice 0.
-- Caso médio: O(n) - O elemento é encontrado na última verificação ou não é encontrado.
-
-### Busca Binária
-
-Consiste em uma abordagem em que a sequência fornecida tem que estar ordenada inicialmente. O primeiro elemento verificado é o elemento central, e são feitas comparações para determinar se é igual, maior ou menor que o valor-chave. Como a lista está ordenada, se o elemento central for maior que o valor-chave, a primeira metade da lista pode ser descartada, e o processo é repetido até encontrar o valor-chave ou percorrer toda a lista.
-
-- Melhor caso: O(1) - O elemento é encontrado na primeira verificação, localizado no índice int(n/2).
-- Caso médio: O(log2 n) - O elemento é encontrado na última verificação ou não é encontrado.
+#### TAD Conjunto e TAD Dicionário
+- [ ] [Assistir](https://youtu.be/P7pXz3ziDnI)
