@@ -58,9 +58,9 @@ Disciplina do Currículo base ministrada pelo Professor César Rennó-Costa.
 <!-- - **Compilação de Códigos:** `gcc -o teste_vetorcircular edb_teste_vetorcircular.c edb_vetorcircular.c` / `gcc -o teste_vetor edb_teste_vetor.c edb_vetor.c`-->
 
 #### TAD Sequência: ED Lista Ligada
-- [ ] **Aula 1:** _Implementação de TAD Sequência com ED Lista Ligada_ [Parte 1](https://youtu.be/8AkLrPoefnQ) (Definição de Lista Ligada), [Parte 2](https://youtu.be/vT2ZnhOtI0E) (Iterador e acesso a elementos), [Parte 3](https://youtu.be/PP-8qdXbrB0) (Inserção e Remoção)
-- [ ] **Aula 2:** _Implementação de TAD Sequência com ED Lista Duplamente Ligada e ED Lista Ligada com Início e Fim_ [Assistir](https://youtu.be/wYfR1oMuLV0)
+- [x] **Aula 1:** _Implementação de TAD Sequência com ED Lista Ligada_ [Parte 1](https://youtu.be/8AkLrPoefnQ) (Definição de Lista Ligada), [Parte 2](https://youtu.be/vT2ZnhOtI0E) (Iterador e acesso a elementos), [Parte 3](https://youtu.be/PP-8qdXbrB0) (Inserção e Remoção)
+- [x] **Aula 2:** _Implementação de TAD Sequência com ED Lista Duplamente Ligada e ED Lista Ligada com Início e Fim_ [Assistir](https://youtu.be/wYfR1oMuLV0)
 <!-- - **Compilação de Códigos:** `gcc -o teste_ll edb_teste_listaligada.c edb_listaligada.c` / `gcc -o teste_ll2 edb_teste_listaligada2.c edb_listaligada2.c` / `gcc -o teste_ll3 edb_teste_listaligada3.c edb_listaligada3.c`-->
 
 #### TAD Conjunto e TAD Dicionário
-- [ ] [Assistir](https://youtu.be/P7pXz3ziDnI)
+- [x] [Assistir](https://youtu.be/P7pXz3ziDnI)
